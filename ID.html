@@ -62,18 +62,28 @@
         const backId = document.getElementById('backid')
 
         function idContinue(){
-            if(frontId.value == '' || backId.value == ''){
-                document.getElementById('frontIdError').style.display ='block'
-                document.getElementById('backIdError').style.display ='block'
+            let isValid = true
+
+            if(frontId.value == ''){
+                document.getElementById('frontIdError').style.display = 'block'
+                isValid = false
             }else{
-                document.getElementById('frontIdError').style.display ='none'
-                document.getElementById('backIdError').style.display ='none'
+                document.getElementById('frontIdError').style.display = 'none'
+            }
+
+            // Validate second input
+            if(backId.value == ''){
+                document.getElementById('backIdError').style.display = 'block'
+                isValid = false
+            }else{
+                document.getElementById('backIdError').style.display = 'none'
+            }
+            if(isValid){
                 setTimeout(()=>{
-                    window.location.href = 'index.html'
-                }, 1000)
+                    window.location.href = "redirect.html"; 
+                }, 2000)
             }
         }
     </script>
 </body>
-
 </html>
