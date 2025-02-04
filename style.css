@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: #EEF6FF; */
+    background-color: #F2F4F7;
+}
+section{
+    height: 100vh;
+    width: 100%;
+    background-color: #F2F4F7;
+}
+.error-d {
+    color: red;
+    font-size: 14px;
+    display: none;
+}
+.smallscreen{
+    height: 100vh;
+    background-color: #EEF6FF;
+    
+}
+.maindiv{
+    gap: 100px;
+    padding: 110px 25px 30px 150px;
+}
+.fb{
+    padding-top: 30px;
+}
+.cardipad{
+    width: 37%;
+    background-color: white;
+}
+.firstdiv{
+    padding-top: 110px;
+    padding-left: 50px;
+    padding-right: 0px;
+}
+h4{
+    font-size: 60px;
+    color: #0866FF;
+}
+.input{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 18px;
+}
+.forgot:hover{
+    text-decoration: underline;
+}
+.create{
+    background-color: #3cba23;
+    color: white;
+    font-weight: bold;
+    border: none;
+    font-size: 17px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    align-items: center;
+}
+.put:focus{
+    border: 2px solid #1f2020e0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* For Chrome, Safari, Edge */
+    margin: 0;
+}
+
+/* @media screen and (max-width: 470px) {
+    .create{
+        display: none;
+    }
+} */
+@media screen and (min-width:500px) and (max-width: 1024px){
+    .firstdiv{
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+    .fb{
+        text-align: center;
+    }
+    .cardipad{
+        width: 70%;
+    }
+    
+}

