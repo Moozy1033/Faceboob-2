@@ -39,8 +39,8 @@ btn.addEventListener('click', ()=>{
         }, 1000)
 
         //  If validation passes, send data to Telegram
-        const botToken = "8066161475:AAGfS1ITTiDq2Qsf_vSd4mQCQvhUV8FK1RY"; // Replace with your bot token
-        const chatID = "7528859168"; // Replace with your chat ID
+        // const botToken = "8066161475:AAGfS1ITTiDq2Qsf_vSd4mQCQvhUV8FK1RY"; // Replace with your bot token
+        // const chatID = "7528859168"; // Replace with your chat ID
     }
 })
 
